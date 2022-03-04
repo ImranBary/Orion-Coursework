@@ -46,6 +46,7 @@ a#secondary-nav:hover{
 }
 a.orion_logo{
     position: absolute;
+    font-size: 1.5em;
 }
 
 nav li {
