@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 :root{
     --orion-blue: #308879;
     --orion-orange: #ffcf94;
@@ -8,7 +8,8 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color:black;
-    color: white;
+    color: white; */
+body{
     width: 100vw;
     height: 100vh;
 }
