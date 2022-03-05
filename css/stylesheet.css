@@ -1,3 +1,6 @@
+*{
+    scroll-behavior:smooth;
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -11,32 +14,37 @@ body{
     align-items: center;
 }
 #video-pos{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 50vw;
     height: 50vh;
     z-index: -1;
 }
 .navigation{
-    position: absolute;
-    top: 8%;
-    width: 80%;
+    position: fixed;
+    padding: 1em;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    float: left;
 }
 .primary-nav{
-    position: relative;
-    left:9%;
+    width: 60%;
+    float: left;
+
 }
 .secondary-nav{
-    position: absolute;
-    top: 0;
-    right:0;
+    float: right;
+    margin-right: 2em;
+   
 }
 a#secondary-nav:hover{
     border-bottom: 3px solid var(--orion-blue);
 }
 a.orion_logo{
-    position: absolute;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    margin-left: 2em;
+    float: left;
 }
 
 nav li {
@@ -63,16 +71,11 @@ a:hover{
 .about{
     block-size: 25em;
     padding: 7em;
+    background-color: black;
 }
-.text-info{
+.text-info{ 
     float: left;
-    width: 50%;
-}
-
-.last-page{
-    block-size: 25em;
-    padding: 10%;
-    background-color: gray;
+    width: 40%;
 }
 .planet-circle{
     margin: 2em;
@@ -82,4 +85,9 @@ a:hover{
     width: 20em;
     height: 20em;
 }
+.last-page{
+    block-size: 25em;
+    padding: 10%;
+}
+
 
