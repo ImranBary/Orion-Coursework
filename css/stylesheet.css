@@ -14,10 +14,14 @@ body{
     align-items: center;
 }
 #video-pos{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 50vw;
     height: 50vh;
+    z-index: -2;
+}
+h1{
+   
     z-index: -1;
 }
 .navigation{
