@@ -21,35 +21,39 @@ body{
     z-index: -2;
 }
 h1{
-   
     z-index: -1;
 }
 .navigation{
     position: fixed;
-    padding: 1em;
+    padding: 1em 0 0.5em 0;
     top: 0;
     width: 100%;
     background-color: black;
     float: left;
 }
 .primary-nav{
+    position: relative;
     width: 60%;
+    left: 7%;
     float: left;
 
 }
 .secondary-nav{
+    position: relative;
     float: right;
-    margin-right: 2em;
-   
+    right: 10%;  
+}
+a.orion_logo{
+    position: relative;
+    font-size: 1.2em;
+    left: 8%;
+    float: left;
 }
 a#secondary-nav:hover{
     border-bottom: 3px solid var(--orion-blue);
 }
-a.orion_logo{
-    font-size: 1.3em;
-    margin-left: 2em;
-    float: left;
-}
+
+
 
 nav li {
     display: inline;
