@@ -78,12 +78,12 @@ a:hover{
 }
 .about{
     block-size: 25em;
-    padding: 7em;
+    padding: 7em 7em 0 8em;
     background-color: black;
 }
 .text-info{ 
     float: left;
-    width: 40%;
+    width: 30vw;
 }
 .planet-circle{
     margin: 2em;
@@ -96,6 +96,17 @@ a:hover{
 .last-page{
     block-size: 25em;
     padding: 10%;
+}
+.last-page h1 {
+    float:right;
+}
+.planet-circle-two{
+    margin: 2em;
+    float: left;
+    background: linear-gradient(225deg, rgba(255,226,191,1) 0%, rgba(255,174,74,1) 19%, rgba(0,0,0,1) 54%);
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
 }
 
 
