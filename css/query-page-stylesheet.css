@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(233deg, rgba(255,228,196,1) 0%, rgba(158,100,29,1) 27%, rgba(0,0,0,1) 50%);
+}
+.container{
+    position: relative;
+    color: var(--orion-blue);
+    width: 100px;
+    height: 100px;
+    align-items: center;
+
+}

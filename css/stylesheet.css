@@ -29,6 +29,7 @@ h1{
     width: 100%;
     background-color: black;
     float: left;
+    z-index: 1;
 }
 .primary-nav{
     position: relative;
@@ -102,7 +103,9 @@ a{
     width: 20em;
     height: 20em;
 }
+
 .last-page{
+    position: relative;
     block-size: 25em;
     padding: 10%;
 }
@@ -117,5 +120,11 @@ a{
     width: 20em;
     height: 20em;
 }
-
+svg{
+    position: absolute;
+    fill: white;
+    align-items: center;
+    bottom: 40px;
+    left: 50%;
+}
 
