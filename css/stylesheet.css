@@ -44,15 +44,23 @@ h1{
 }
 a.orion_logo{
     position: relative;
-    font-size: 1.2rem;
-    left: 9%;
+    font-size: 1.1rem;
+    padding: 1%;
+    left: 10%;
     float: left;
 }
 a#secondary-nav:hover{
-    border-bottom: 3px solid var(--orion-blue);
+    color:  var(--orion-blue);
 }
-
-
+a:hover{
+    color: var(--orion-orange);
+}
+a:active{
+    color: var(--orion-blue);
+}
+a#secondary-nav:active{
+    color: var(--orion-orange);
+}
 
 nav li {
     display: inline;
@@ -62,14 +70,16 @@ nav li {
 .hero h1{
     font-size: 4rem;
 }
+.tours-h1{
+    font-style: normal;
+    font-size: 3.2rem;
+}
 a{
     text-decoration: none;
     color: white;
     padding: 1%;
 }
-a:hover{
-    border-bottom: 3px solid var(--orion-orange);
-}
+
 
 .bigO{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -87,7 +97,7 @@ a:hover{
 .planet-circle{
     margin: 2em;
     float: right;
-    background: linear-gradient(180deg, rgba(123,255,232,1) 0%, rgba(48,136,121,1) 35%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(150deg, rgba(153,255,237,1) 0%, rgba(48,136,121,1) 37%, rgba(13,49,69,1) 60%, rgba(0,0,0,1) 82%);
     border-radius: 50%;
     width: 20em;
     height: 20em;
