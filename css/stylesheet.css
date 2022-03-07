@@ -2,8 +2,7 @@
     scroll-behavior:smooth;
 }
 body{
-    width: 100vw;
-    height: 100vh;
+    color: white;
 }
 .hero{
     block-size: 50em;
@@ -15,9 +14,9 @@ body{
 }
 #video-pos{
     position: absolute;
-    bottom: 0;
-    width: 50vw;
-    height: 50vh;
+    top:50%;
+    width: 60%;
+    height: 60%;
     z-index: -2;
 }
 h1{
@@ -34,7 +33,7 @@ h1{
 .primary-nav{
     position: relative;
     width: 60%;
-    left: 7%;
+    left: 9%;
     float: left;
 
 }
@@ -45,8 +44,8 @@ h1{
 }
 a.orion_logo{
     position: relative;
-    font-size: 1.2em;
-    left: 8%;
+    font-size: 1.2rem;
+    left: 9%;
     float: left;
 }
 a#secondary-nav:hover{
@@ -61,7 +60,7 @@ nav li {
     padding-left: 1% ;
 }
 .hero h1{
-    font-size: 4em;
+    font-size: 4rem;
 }
 a{
     text-decoration: none;
