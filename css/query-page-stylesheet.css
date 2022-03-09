@@ -1,13 +1,21 @@
 body{
-    height: 100vh;
+    background-color: black;
+}
+.rocket{
+    position: absolute;
     width: 100%;
-    background: linear-gradient(233deg, rgba(255,228,196,1) 0%, rgba(158,100,29,1) 27%, rgba(0,0,0,1) 50%);
+    height: 100%;
+    object-fit:cover;
+    z-index: -1;
 }
 .container{
-    position: relative;
-    color: var(--orion-blue);
-    width: 100px;
-    height: 100px;
-    align-items: center;
-
+    position: absolute;
+    background: linear-gradient(145deg, rgba(79,111,106,1) 0%, rgba(30,43,41,1) 100%);
+    width: 25rem;
+    height: 30rem;
+    left: 40%;
+    top: 17%;
+}
+form{
+    margin: 20px 0 0 20px;
 }

@@ -9,7 +9,28 @@
     <link rel="stylesheet" href="css/query-page-stylesheet.css">
 </head>
 <body>
-    <div class="container"></div>
+    <img src="assets/rocket.jpg" alt="rocket taking off " class="rocket">
+    <div class="container">
+        <form action="#" method="post">
+            <label for="name"> Name <br>
+                <input type="text" name="Name" id="name" placeholder="Full name "> <br>
+            </label>
+            <label for="email"> Email <br>
+                <input type="email" name="Email" id="email" >
+            </label><br>
+            <label for="Subject">Subject</label><br>
+            <select name="Subject" id="subject">
+                <option value="et" selected>Extraterrestrial concerns </option>
+                <option value="realtivity">Time relativity (unwanted time travel) </option>
+                <option value="martians">Life on Mars?</option>
+            </select><br>
+            <label for="details">Details </label><br>
+            <textarea name="details" id="details" cols="30" rows="10"></textarea><br>
+            
+            <input type="submit" name="send" value="Submit">
+        </form>
+      
+    </div>
 
     
 </body>
