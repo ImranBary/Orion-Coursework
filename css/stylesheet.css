@@ -127,4 +127,17 @@ svg{
     bottom: 40px;
     left: 50%;
 }
-
+.creator-button{
+    position: absolute;
+    bottom: -400px;
+    border: 2px solid white;
+    padding: 1.1em;
+}
+a.creator-button:hover{
+    color: black;
+    background-color: white;
+}
+a.creator-button:active{
+    color: white;
+    background-color: black;
+}
