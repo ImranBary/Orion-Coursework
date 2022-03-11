@@ -29,15 +29,15 @@ h1{
 form{
     position: relative;
     left:10%;
-    top: 8%;
+    top: 10%;
 }
 input[type=text], input[type=email]{
     background: none;
-    width:50%;
+    width:60%;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid rgb(103, 143, 137);
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     color: white;
 }
 input[type=submit] {
@@ -49,6 +49,9 @@ input[type=submit] {
     height: 8%;
     cursor:pointer;
 }
+select{
+    margin-bottom: 5%;
+}
 textarea{
     background: none;
     box-sizing: border-box;
@@ -56,6 +59,7 @@ textarea{
     border-bottom: 2px solid rgb(103, 143, 137);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5%;
 }
 input[type=submit]:hover{
     background-color: rgb(100, 138, 131);

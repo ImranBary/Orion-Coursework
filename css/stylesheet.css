@@ -1,9 +1,6 @@
 *{
     scroll-behavior:smooth;
 }
-body{
-    color: white;
-}
 .hero{
     block-size: 50em;
     width: 100%;
