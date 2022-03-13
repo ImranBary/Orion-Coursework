@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .hero{
     width: 100%;
     height: 100vh;
@@ -9,6 +12,12 @@
     object-fit: cover;
     z-index: -1;
 }
+h1{
+    position:absolute;
+    left:2%;
+    top:35%;
+    font-size: 3em;
+}
 .rocket{
     position:absolute;
     width:30%;
@@ -17,6 +26,11 @@
     z-index: 1;
 }
 .next-page{
-    block-size: 50em;
-  
+    block-size: 30em;
+}
+.ship-img{
+    width:100%;
+}
+.last-page{
+    block-size: 100vh;
 }
