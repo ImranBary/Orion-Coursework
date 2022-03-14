@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .rocket{
     position: absolute;
     width: 100%;
@@ -10,23 +13,25 @@
     background: linear-gradient(145deg, rgba(79,111,106,1) 0%, rgba(30,43,41,1) 100%);
     width: 500px;
     height: 640px;
-    left:35%;
+    left:33%;
     top:2% ;
     border-radius: 2%;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-a:hover{
-    color: var(--orion-orange);
-}
+
 h1{
     font-size: 2em;
     position: relative;
     margin: 0;
+    padding-bottom: 2%;
+    width: 40%;
     left:10%;
     top:2%;
+}
+h2{
+    position: relative;
+    margin: 0;
+    color: var(--orion-orange);
+    left: 10.5%;
 }
 .bigO{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -38,8 +43,8 @@ h1{
 }
 form{
     position: relative;
-    left:10%;
-    top: 15%;
+    left:11%;
+    top: 8%;
 }
 input[type=text], input[type=email]{
     background: none;
@@ -50,7 +55,7 @@ input[type=text], input[type=email]{
     margin-bottom: 7%;
     color: white;
 }
-input[type=submit] {
+button[type=button] {
     position: absolute;
     background-color:rgb(103, 143, 137) ;
     border: none;
@@ -71,6 +76,45 @@ textarea{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 7%;
 }
-input[type=submit]:hover{
-    background-color: rgb(100, 138, 131);
+button[type=button]:hover{
+    background-color: var(--orion-orange);
+}
+
+
+#displayForm{
+    display: none;
+    position: absolute;
+    background: linear-gradient(145deg, rgba(79,111,106,1) 0%, rgba(30,43,41,1) 100%);
+    width: 500px;
+    height: 640px;
+    left:33%;
+    top:2% ;
+    border-radius: 2%;
+    padding-left: 1%;
+}
+#displayForm .buttons{
+    position: absolute;
+    bottom:10%;
+    width: 50%;
+    height: 10%;
+    
+    
+    
+}
+#displayForm button[type=button]{
+    position:relative;
+    width: 40%;
+    height: 40%;
+}
+#displayForm button[type=submit] {
+    position: relative;
+    background-color:rgb(103, 143, 137) ;
+    border: none;
+    color: white;
+    width: 40%;
+    height: 40%;
+    cursor:pointer;
+}
+#displayForm button[type=submit]:hover{
+    background-color: var(--orion-orange);
 }

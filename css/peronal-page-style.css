@@ -26,11 +26,13 @@ h1{
     z-index: 1;
 }
 .next-page{
-    block-size: 30em;
+    block-size: 29em;
+    padding: 0;
 }
 .ship-img{
     width:100%;
 }
 .last-page{
+    background-color: black;
     block-size: 100vh;
 }
