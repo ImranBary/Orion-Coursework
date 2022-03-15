@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,26 @@
     <link rel="stylesheet" href="css/main-stylesheet.css">
     <link rel="stylesheet" href="css/query-page-stylesheet.css">
     <script>
-        function validateForm(){
-            let customerNameField = document.forms["orionQuery"] ["name"].value;
-            if (customerNameField == ""){
-                alert ("Name must be entered");
+        function validateForm() {
+            function emailIsValid(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+            }
+            let customerNameField = document.forms["orionQuery"]["name"].value;
+            if (customerNameField == "") {
+                alert("Name must be entered");
                 return false;
             }
             let customerEmailField = document.forms["orionQuery"]["email"].value;
-            if (customerEmailField == ""){
-                alert ("Email must be etered");
+            if (customerEmailField == "") {
+                alert("Email must be etered");
+                return false;
+            }
+            if (emailIsValid(customerEmailField) == false){
+                alert("Please enter a valid Email");
                 return false;
             }
             let customerDetails = document.forms["orionQuery"]["details"].value;
-            if (customerDetails == ""){
+            if (customerDetails == "") {
                 alert("Details must be provided");
                 return false;
             }
@@ -30,8 +38,9 @@
 </head>
 <body>
     <img src="assets/earth.jpeg" alt="rocket taking off " class="rocket">
-    <h1 class="logo"> <a href="main-page.html"> <span class="bigO">O</span>rion <span class="smallT">Tours</span></a></h1>
-    <form action="#" enctype="text/plain" name="orionQuery"  method="post">
+    <h1 class="logo"> <a href="main-page.html"> <span class="bigO">O</span>rion <span class="smallT">Tours</span></a>
+    </h1>
+    <form action="mailto:imranfeisalAB@gmail.com" enctype="text/plain" method="post" name="orionQuery">
         <div id="form">
             <div class="container">
                 <h2>Query form</h2>
@@ -42,11 +51,11 @@
                     <label for="email"> Email <br>
                         <input type="email" name="Email" id="email" placeholder="example@email.com">
                     </label><br>
-                    <label for="Subject">Subject</label><br>
+                    <label for="subject">Subject</label><br>
                     <select name="Subject" id="subject">
-                        <option value="et" selected>Extraterrestrial concerns </option>
-                        <option value="realtivity">Time relativity (unwanted time travel) </option>
-                        <option value="martians">Life on Mars?</option>
+                        <option value="Extraterrestrial" selected>Extraterrestrial concerns </option>
+                        <option value="Realtivity">Time relativity (unwanted time travel) </option>
+                        <option value="Martians">Life on Mars?</option>
                     </select><br>
                     <label for="details">Details </label><br>
                     <textarea name="details" id="details" cols="43" rows="5"></textarea><br>
@@ -61,7 +70,8 @@
             <p>Details: <span id="customerDetailsDisplay" style="color: white;"></span></p>
             <div class="buttons">
                 <button type="button" id="editDetails">Edit Details</button>
-                <button type="submit" id="submitDetails">Submit Details</button>
+                <button type="submit">Submit Details</button>
+
             </div>
         </div>
     </form>
@@ -78,25 +88,19 @@
             document.getElementById("customerSubjectDisplay").innerHTML = querySubject;
             let queryDetail = document.getElementById("details").value;
             document.getElementById("customerDetailsDisplay").innerHTML = queryDetail;
-            if (customerName != "" && customerEmail != "" && queryDetail != "" ){
+            function emailIsValid(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+            }
+            if (customerName != "" && customerEmail != "" && queryDetail != "" && emailIsValid(customerEmail) != false) {
                 document.getElementById("form").style.display = "none";
                 document.getElementById("displayForm").style.display = "block";
             }
         });
-        
-
         document.getElementById("editDetails").addEventListener("click", function () {
             document.getElementById("form").style.display = "block";
             document.getElementById("displayForm").style.display = "none";
         });
-    
-        
-    
-                
-            
-
-           
     </script>
-</body> 
+</body>
 
 </html>
