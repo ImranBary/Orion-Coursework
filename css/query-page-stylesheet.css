@@ -17,35 +17,45 @@
     top:2% ;
     border-radius: 2%;
 }
-
-h1{
-    font-size: 2em;
-    position: relative;
+.logo{
     margin: 0;
-    padding-bottom: 2%;
+    padding: 0;
+    font-size: 2em;
+    position: absolute;
     width: 40%;
-    left:10%;
+    left:2%;
     top:2%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: var(--orion-orange);
 }
 h2{
     position: relative;
     margin: 0;
     color: var(--orion-orange);
-    left: 10.5%;
+    left: 9%;
+    top:2%;
+    font-size: 2em;
 }
 .bigO{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
+    margin: 0;
 
 }
 .smallT{
     font-size:smaller;
 }
-form{
-    position: relative;
-    left:11%;
-    top: 8%;
+.form-details{
+    position:relative;
+    left:10%;
+    top:10%;
 }
+
 input[type=text], input[type=email]{
     background: none;
     width:60%;
