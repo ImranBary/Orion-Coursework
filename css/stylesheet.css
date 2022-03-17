@@ -1,5 +1,6 @@
 *{
     scroll-behavior:smooth;
+    box-sizing: border-box;
 }
 .hero{
     block-size: 50em;
@@ -21,43 +22,36 @@ h1{
 }
 .navigation{
     position: fixed;
-    padding: 1em 0 0.5em 0;
-    top: 0;
+    top:0; 
+    display: flex;
+    align-items: baseline;
     width: 100%;
     background-color: black;
-    float: left;
     z-index: 1;
+    padding: 2% 8% 0 8%;
 }
 .primary-nav{
-    position: relative;
-    width: 60%;
-    left: 9%;
-    float: left;
+    width: 100%;
+    margin: 0;
+}
 
-}
 .secondary-nav{
-    position: relative;
-    float: right;
-    right: 10%;  
+    width: 10%;
+    margin: 0;
 }
-a.orion_logo{
-    position: relative;
-    font-size: 1.1rem;
-    padding: 1%;
-    left: 10%;
-    float: left;
+.orion_logo a{
+    font-size: 1.2em;
+    padding: 2%;
 }
 a#secondary-nav:hover{
-    color:  var(--orion-blue);
+    border-bottom:2px solid  var(--orion-blue);
 }
 a:hover{
-    color: var(--orion-orange);
+    border-bottom:2px solid var(--orion-orange);
 }
-a:active{
+.orion_logo a:hover{
     color: var(--orion-blue);
-}
-a#secondary-nav:active{
-    color: var(--orion-orange);
+    border: none;
 }
 
 nav li {
@@ -84,7 +78,7 @@ a{
     font-size: 1.5em;
 }
 .about{
-    block-size: 25em;
+    height: 100vh;
     padding: 7em 7em 0 8em;
     background-color: black;
 }
@@ -102,8 +96,8 @@ a{
 }
 
 .last-page{
-    position: relative;
-    block-size: 25em;
+    position: absolute;
+    height: 100vh;
     padding: 10%;
 }
 .last-page h1 {
@@ -118,11 +112,7 @@ a{
     height: 20em;
 }
 svg{
-    position: absolute;
     fill: white;
-    align-items: center;
-    bottom: 40px;
-    left: 50%;
 }
 .creator-button{
     position: absolute;
@@ -137,4 +127,14 @@ a.creator-button:hover{
 a.creator-button:active{
     color: white;
     background-color: black;
+}
+.last-page a:hover{
+    border: none;
+}
+.bottom{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: -1200px;
+    z-index: 1;
 }

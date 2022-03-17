@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/query-page-stylesheet.css">
     <script>
         function validateForm() {
-            function emailIsValid(email) {
+            function emailValidation(email) {
                 return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
             }
             let customerNameField = document.forms["orionQuery"]["name"].value;
@@ -24,7 +24,7 @@
                 alert("Email must be etered");
                 return false;
             }
-            if (emailIsValid(customerEmailField) == false){
+            if (emailValidation(customerEmailField) == false){
                 alert("Please enter a valid Email");
                 return false;
             }
