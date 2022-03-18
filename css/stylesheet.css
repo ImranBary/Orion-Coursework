@@ -71,14 +71,12 @@ a{
     color: white;
     padding: 1%;
 }
-
-
 .bigO{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
 }
 .about{
-    height: 100vh;
+    height: 70vh;
     padding: 7em 7em 0 8em;
     background-color: black;
 }
@@ -97,19 +95,24 @@ a{
 
 .last-page{
     position: absolute;
-    height: 100vh;
-    padding: 10%;
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
 }
-.last-page h1 {
-    float:right;
+.last-page img{
+    
+    width: 100%;
+    
+    object-fit: cover;
+    z-index: -1;
 }
-.planet-circle-two{
-    margin: 2em;
-    float: left;
-    background: linear-gradient(225deg, rgba(255,226,191,1) 0%, rgba(255,174,74,1) 19%, rgba(0,0,0,1) 54%);
-    border-radius: 50%;
-    width: 20em;
-    height: 20em;
+.last-page p{
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    bottom: 300%;
 }
 svg{
     fill: white;
@@ -133,8 +136,7 @@ a.creator-button:active{
 }
 .bottom{
     position: relative;
-    display: flex;
-    justify-content: center;
-    bottom: -1200px;
-    z-index: 1;
+    left: 48%;
+    bottom:110%;
+  
 }
