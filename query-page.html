@@ -38,8 +38,33 @@
 </head>
 <body>
     <img src="assets/earth.jpeg" alt="rocket taking off " class="rocket">
-    <h1 class="logo"> <a href="main-page.html"> <span class="bigO">O</span>rion <span class="smallT">Tours</span></a>
-    </h1>
+    <div class="navigation">
+        <div class="orion_logo">
+            <a href="main-page.html" ><span class="bigO">O</span></a>
+        </div>
+        <div class="primary-nav">
+            <nav>
+                <ul >
+                    <li><a href="main-page.html#about">About us</a></li>
+                    <li><a href="query-page.html">Query</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="personal-page.html">The Future</a></li>
+                    <li><a href="#">Blalbla </a></li>
+                    <li><a href="#">Blalbla </a></li>
+                    <li><a href="#">Blalbla </a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+        <div class="secondary-nav">   
+            <nav>
+                <ul >
+                    <li><a id="secondary-nav" href="#">Shop</a></li>
+                </ul>
+            </nav>  
+        </div>
+
+        </div>
     <form action="mailto:imranfeisalAB@gmail.com" enctype="text/plain" method="post" name="orionQuery">
         <div id="form">
             <div class="container">
@@ -88,9 +113,11 @@
             document.getElementById("customerSubjectDisplay").innerHTML = querySubject;
             let queryDetail = document.getElementById("details").value;
             document.getElementById("customerDetailsDisplay").innerHTML = queryDetail;
+            
             function emailIsValid(email) {
                 return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
             }
+
             if (customerName != "" && customerEmail != "" && queryDetail != "" && emailIsValid(customerEmail) != false) {
                 document.getElementById("form").style.display = "none";
                 document.getElementById("displayForm").style.display = "block";
