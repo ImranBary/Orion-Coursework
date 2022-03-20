@@ -1,5 +1,6 @@
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 .hero{
     position: relative;
@@ -109,6 +110,7 @@ a{
     line-height: 30px;
 }
 .about-pages div:nth-child(1){
+    padding: 10%;
     background-color: black;
 }
 .about-pages div:nth-child(2){
@@ -116,6 +118,7 @@ a{
     
 }
 .about-pages div:nth-child(3){
+    padding: 10%;
     background-color: black;
 }
 .about-pages div:nth-child(2) img{
@@ -126,20 +129,7 @@ a{
     z-index: -1;
   
 }
-.next-page{
-    block-size: 29em;
-    padding: 0;
-}
-.ship-img{
-    position: absolute;
-    width:100%;
-    z-index: -1;
-}
-.content1{
-    position: absolute;
-    right:10%; 
-    padding: 8%;
-}
+
 .last-page{
     background-color: black;
     height: 100vh;
@@ -148,9 +138,31 @@ a{
     align-items: center;
 }
 .last-page p{
+    position: absolute;
     text-align: center;
-
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 600;
     color: white;
+    width: 100%;
+}
+.last-page p a{
+    border: 2px solid white;
+    border-radius: 2%;
+}
+.last-page p a:hover{
+    color: black;
+    background-color: var(--orion-blue);
+    border: 2px solid var(--orion-blue);
+}
+.space{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+.starman{
+    position: absolute;
+    width:5%;
+    right:20%;
 }

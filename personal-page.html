@@ -63,23 +63,12 @@
             </div>
         </div>
     </section>
-    <section class="next-page" id="next-page">
-        <img src="assets/ship.jpg" alt="" class="ship-img">
-        
-        <div class="content1">
-            <h2>Something</h2>
-            <ul>
-                <li>balabala</li>
-                <li>balabala</li>
-                <li>balabala</li>
-                <li>balabala</li>
-            </ul>
-         </div>
-
-    </section>
+  
 
     <section class="last-page">
-        <p>More content</p>
+        <img src="assets/abyss.jpg" alt="Nothingness" class="space">
+        <img src="assets/cosmonaut.png" alt="Starman" class="starman">
+        <p><a href="#">Page Editor</a></p>
     </section>
 
     
@@ -107,6 +96,17 @@
             }
         }
      });
+
+  /*    https://www.youtube.com/watch?v=bfdEB5OiUwY&list=WL&index=49&ab_channel=litecode */
+     let something = document.querySelector('.last-page');
+     let somethingElse = document.querySelector('.starman');
+
+     something.onmousemove = function(e){
+         let X = e.pageX;
+         let Y = e.pageY;
+         somethingElse.style.transform = 'translate('+X/100*2+'px, '+ Y/100*-2 +'px)';
+     }
     </script>
+
 </body>
 </html>
