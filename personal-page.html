@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,21 @@
     <link rel="stylesheet" href="css/main-stylesheet.css">
     <link rel="stylesheet" href="css/peronal-page-style.css">
     <title>Peronal Page</title>
-  
+
 </head>
+
 <body>
     <section class="hero">
         <img src="assets/Atmos.jpg" alt="Planet" class="background-img">
-        <img src="assets/rocket.png" alt="" class="rocket scroll" data-rateY="-0.8" data-rateX="2" data-direction="horizontal">
+        <img src="assets/rocket.png" alt="" class="rocket scroll" data-rateY="-0.8" data-rateX="2"
+            data-direction="horizontal">
         <div class="navigation">
             <div class="orion_logo">
-                <a href="main-page.html" ><span class="bigO">O</span></a>
+                <a href="main-page.html"><span class="bigO">O</span></a>
             </div>
             <div class="primary-nav">
                 <nav>
-                    <ul >
+                    <ul>
                         <li><a href="main-page.html#about">About us</a></li>
                         <li><a href="query-page.html">Query</a></li>
                         <li><a href="quiz.html">Quiz</a></li>
@@ -28,42 +31,64 @@
                         <li><a href="#">Blalbla </a></li>
                         <li><a href="#">Blalbla </a></li>
                         <li><a href="#">Blalbla </a></li>
-                       
+
                     </ul>
                 </nav>
             </div>
-            <div class="secondary-nav">   
+            <div class="secondary-nav">
                 <nav>
                     <li><a id="secondary-nav" href="#">Shop</a></li>
-                </nav>  
+                </nav>
             </div>
-    
+
         </div>
         <h1>The Future of Space Travel</h1>
     </section>
-    <section class="about">
-        <div class="about-title">
+    <section class="content1">
+        <div class="content1-title">
             <img src="assets/rocketman.jpg" alt="And I think it's gonna be a long, long time
             'Til touchdown brings me 'round again to find">
             <h2>One Small Step</h2>
         </div>
-        <div class="about-pages">
+        <div class="content1-pages">
             <div>
                 <h2>Something</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque ipsum porro sit nisi qui quasi, corrupti illum fugiat quidem modi animi fugit quo suscipit incidunt eveniet veniam minus odit tenetur sequi, accusantium obcaecati dolorum. Non, tenetur, dolor doloribus nisi perspiciatis, laudantium ullam saepe provident hic nobis architecto officiis! Ipsa.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque ipsum porro sit nisi qui quasi,
+                    corrupti illum fugiat quidem modi animi fugit quo suscipit incidunt eveniet veniam minus odit
+                    tenetur sequi, accusantium obcaecati dolorum. Non, tenetur, dolor doloribus nisi perspiciatis,
+                    laudantium ullam saepe provident hic nobis architecto officiis! Ipsa.</p>
             </div>
             <div>
-                <img src="assets/stardust.jpeg" alt="Ground control to Major Tom, take your protein pills and put your helmet on">
-                <h2>Something</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque ipsum porro sit nisi qui quasi, corrupti illum fugiat quidem modi animi fugit quo suscipit incidunt eveniet veniam minus odit tenetur sequi, accusantium obcaecati dolorum. Non, tenetur, dolor doloribus nisi perspiciatis, laudantium ullam saepe provident hic nobis architecto officiis! Ipsa.</p>
+                <img src="assets/stardust.jpeg"
+                    alt="Ground control to Major Tom, take your protein pills and put your helmet on">
+                <p>The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever - Konstantin Tsiolkovsky</p>
             </div>
             <div>
                 <h2>Something</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque ipsum porro sit nisi qui quasi, corrupti illum fugiat quidem modi animi fugit quo suscipit incidunt eveniet veniam minus odit tenetur sequi, accusantium obcaecati dolorum. Non, tenetur, dolor doloribus nisi perspiciatis, laudantium ullam saepe provident hic nobis architecto officiis! Ipsa.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque ipsum porro sit nisi qui quasi,
+                    corrupti illum fugiat quidem modi animi fugit quo suscipit incidunt eveniet veniam minus odit
+                    tenetur sequi, accusantium obcaecati dolorum. Non, tenetur, dolor doloribus nisi perspiciatis,
+                    laudantium ullam saepe provident hic nobis architecto officiis! Ipsa.</p>
             </div>
         </div>
     </section>
-  
+    <section class="info">
+        <div class="wrapper">
+            <div class="parent">
+                <img src="assets/liftoff.jpg" alt="">
+                <div class="child"><p class="some-text">We Can Go Further</p></div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="parent">
+                <img src="assets/Ring_nebula.png" alt="">
+                <div class="child" id="move"><img src="assets/space-thing.png" alt="Spacething"></div>
+            </div>
+        </div>
+
+    </section>
+
 
     <section class="last-page">
         <img src="assets/abyss.jpg" alt="Nothingness" class="space">
@@ -71,42 +96,16 @@
         <p><a href="page-editor.html">Page Editor</a></p>
     </section>
 
-    
-   <!--  https://www.youtube.com/watch?v=jvbL-VqACyM&t=639s&ab_channel=DevEd -->
+
+    <!--  https://www.youtube.com/watch?v=jvbL-VqACyM&t=639s&ab_channel=DevEd -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-    <script src="app.js"></script>
-
-    <!-- <span class="scroll" data-rateY="-1" data-rateX="2" data-direction="horizontal"></span> -->
-    <script >
-    window.addEventListener("scroll", function (e) {
-        const target = document.querySelectorAll(".scroll");
-        let index = 0,
-        length = target.length;
-        for (index; index < length; index++) {
-            let pos = window.pageYOffset * target[index].dataset.rate;
-        
-            if (target[index].dataset.direction === "vertical") {
-                target[index].style.transform = "translate3d(0px," + pos + "px, 0px)";
-            } else {
-                let posX = window.pageYOffset * target[index].dataset.ratex;
-                let posY = window.pageYOffset * target[index].dataset.ratey;
-        
-                target[index].style.transform =
-                "translate3d(" + posX + "px, " + posY + "px, 0px)";
-            }
-        }
-     });
-
-  /*    https://www.youtube.com/watch?v=bfdEB5OiUwY&list=WL&index=49&ab_channel=litecode */
-     let something = document.querySelector('.last-page');
-     let somethingElse = document.querySelector('.starman');
-
-     something.onmousemove = function(e){
-         let X = e.pageX;
-         let Y = e.pageY;
-         somethingElse.style.transform = 'translate('+X/100*2+'px, '+ Y/100*-2 +'px)';
-     }
-    </script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js'></script>
+   
+     <script src="app.js"></script>
 </body>
+
 </html>
