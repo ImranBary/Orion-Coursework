@@ -24,7 +24,7 @@
                 alert("Email must be etered");
                 return false;
             }
-            if (emailValidation(customerEmailField) == false){
+            if (emailValidation(customerEmailField) == false) {
                 alert("Please enter a valid Email");
                 return false;
             }
@@ -36,35 +36,36 @@
         }
     </script>
 </head>
+
 <body>
     <img src="assets/earth.jpeg" alt="rocket taking off " class="rocket">
     <div class="navigation">
         <div class="orion_logo">
-            <a href="main-page.html" ><span class="bigO">O</span></a>
+            <a href="main-page.html"><span class="bigO">O</span></a>
         </div>
         <div class="primary-nav">
             <nav>
-                <ul >
+                <ul>
                     <li><a href="main-page.html#about">About us</a></li>
+                    <li><a href="#">Creators </a></li>
                     <li><a href="query-page.html">Query</a></li>
                     <li><a href="quiz.html">Quiz</a></li>
                     <li><a href="personal-page.html">The Future</a></li>
                     <li><a href="#">Blalbla </a></li>
                     <li><a href="#">Blalbla </a></li>
-                    <li><a href="#">Blalbla </a></li>
-                   
+
                 </ul>
             </nav>
         </div>
-        <div class="secondary-nav">   
+        <div class="secondary-nav">
             <nav>
-                <ul >
+                <ul>
                     <li><a id="secondary-nav" href="#">Shop</a></li>
                 </ul>
-            </nav>  
+            </nav>
         </div>
 
-        </div>
+    </div>
     <form action="mailto:imranfeisalAB@gmail.com" enctype="text/plain" method="post" name="orionQuery">
         <div id="form">
             <div class="container">
@@ -90,9 +91,9 @@
         </div>
         <div id="displayForm">
             <p>Name: <span id="customerNameDisplay"></span></p>
-            <p>Email: <span id="customerEmailDisplay" ></span></p>
-            <p>Subject: <span id="customerSubjectDisplay" ></span></p>
-            <p>Details: <span id="customerDetailsDisplay" ></span></p>
+            <p>Email: <span id="customerEmailDisplay"></span></p>
+            <p>Subject: <span id="customerSubjectDisplay"></span></p>
+            <p>Details: <span id="customerDetailsDisplay"></span></p>
             <div class="buttons">
                 <button type="button" id="editDetails">Edit Details</button>
                 <button type="submit">Submit Details</button>
@@ -113,7 +114,7 @@
             document.getElementById("customerSubjectDisplay").innerHTML = querySubject;
             let queryDetail = document.getElementById("details").value;
             document.getElementById("customerDetailsDisplay").innerHTML = queryDetail;
-            
+
             function emailIsValid(email) {
                 return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
             }

@@ -9,12 +9,12 @@
     z-index: -1;
 }
 .container{
-    position: absolute;
+    position: relative;
     background: linear-gradient(145deg, rgba(79,111,106,1) 0%, rgba(30,43,41,1) 100%);
     width: 500px;
     height: 590px;
-    left:33%;
-    top:12% ;
+    left:50%;
+    transform:translate(-50%,20%);
     border-radius: 2%;
 }
 .logo{
@@ -26,78 +26,7 @@
     left:2%;
     top:2%;
 }
-.navigation{
-    position: fixed;
-    top:0; 
-    display: flex;
-    align-items: baseline;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0,0.6153054971988796) 0%, rgba(30,43,41,0) 85%);
-    z-index: 1;
-    padding: 1% 8% 2% 8%;
-}
-.primary-nav{
-    width: 100%;
-    margin: 0;
-}
-.secondary-nav{
-    width: 25%;   
-}
-.orion_logo{
-    margin-right: 2%;
-}
-.orion_logo a{
-    font-size: 1.2em;
-    padding: 2%;
-}
-a#secondary-nav:hover{
-    border-bottom:3px solid  var(--orion-blue);
-}
-a:hover{
-    border-bottom:3px solid var(--orion-orange);
-}
-.orion_logo a:hover{
-    color: var(--orion-blue);
-    border: none;
-}
-nav li {
-    display: inline;
-    text-decoration: none;
-    padding-left: 1% ;
-}
-a{
-    text-decoration: none;
-    color: white;
-    padding: 1%;
-}
-.bigO{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5em;
-}
-/* a{
-    text-decoration: none;
-    color: white;
-}
-a:hover{
-    color: var(--orion-orange);
-}
-h2{
-    position: relative;
-    margin: 0;
-    color: var(--orion-orange);
-    left: 9%;
-    top:2%;
-    font-size: 2em;
-}
-.bigO{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;
-    margin: 0;
 
-}
-.smallT{
-    font-size:smaller;
-} */
 h2{
     position: relative;
     margin: 0;
@@ -148,12 +77,12 @@ button[type=button]:hover{
 
 #displayForm{
     display: none;
-    position: absolute;
+    position: relative;
     background: linear-gradient(145deg, rgba(79,111,106,1) 0%, rgba(30,43,41,1) 100%);
     width: 500px;
     height: 590px;
-    left:33%;
-    top:12% ;
+    left:50%;
+    transform:translate(-50%,20%);
     border-radius: 2%;
     padding:2%;
     color: white;

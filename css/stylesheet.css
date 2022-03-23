@@ -17,48 +17,31 @@
     height: 60%;
     z-index: -2;
 }
+#main-site{
+    background-color: black;
+}
+.side-nav{
+    position: fixed;
+    width: 10%;
+    right: 0;
+    z-index: 2;
+}
+.side-nav nav a{
+    display: block;
+}
+.side-nav nav a:hover{
+    border: none;
+    color: var(--orion-blue);
+    
+}
+.side-nav nav a:active{
+    color: var(--orion-blue);
+}
+
 h1{
     z-index:-1;
 }
-.navigation{
-    position: fixed;
-    top:0; 
-    display: flex;
-    align-items: baseline;
-    width: 100%;
-    background-color: black;
-    z-index: 1;
-    padding: 1% 8% 0 8%;
-}
-.primary-nav{
-    width: 100%;
-    margin: 0;
-}
 
-.secondary-nav{
-    width: 10%;
-    margin: 0;
-}
-.orion_logo a{
-    font-size: 1.2em;
-    padding: 2%;
-}
-a#secondary-nav:hover{
-    border-bottom:2px solid  var(--orion-blue);
-}
-a:hover{
-    border-bottom:2px solid var(--orion-orange);
-}
-.orion_logo a:hover{
-    color: var(--orion-blue);
-    border: none;
-}
-
-nav li {
-    display: inline;
-    text-decoration: none;
-    padding-left: 1% ;
-}
 .hero h1{
     font-size: 4rem;
 }
@@ -66,15 +49,7 @@ nav li {
     font-style: normal;
     font-size: 3.2rem;
 }
-a{
-    text-decoration: none;
-    color: white;
-    padding: 1%;
-}
-.bigO{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5em;
-}
+
 .about{
     height: 70vh;
     padding: 7em 7em 0 8em;
@@ -94,25 +69,34 @@ a{
 }
 
 .last-page{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 20vh;
     margin: 0;
     padding: 0;
 }
 .last-page img{
-    
     width: 100%;
-    
     object-fit: cover;
     z-index: -1;
 }
-.last-page p{
+.last-page h2{
     position: relative;
     text-align: center;
     font-size: 1.5em;
     font-weight: 600;
-    bottom: 300%;
+    bottom: 320%;
+}
+.tc{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -320%;
+
+}
+.tc li a{
+    text-decoration:underline;
 }
 svg{
     fill: white;
@@ -134,9 +118,11 @@ a.creator-button:active{
 .last-page a:hover{
     border: none;
 }
-.bottom{
-    position: relative;
-    left: 48%;
-    bottom:110%;
+.bottom { 
+    position: absolute;
+    left: 50%;
+    bottom: -500%;
+    
+    
   
 }

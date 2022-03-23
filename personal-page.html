@@ -13,11 +13,12 @@
 </head>
 
 <body>
+
     <section class="hero">
         <img src="assets/Atmos.jpg" alt="Planet" class="background-img">
         <img src="assets/rocket.png" alt="" class="rocket scroll" data-rateY="-0.8" data-rateX="2"
             data-direction="horizontal">
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <div class="orion_logo">
                 <a href="main-page.html"><span class="bigO">O</span></a>
             </div>
@@ -25,23 +26,36 @@
                 <nav>
                     <ul>
                         <li><a href="main-page.html#about">About us</a></li>
-                        <li><a href="query-page.html">Query</a></li>
-                        <li><a href="quiz.html">Quiz</a></li>
-                        <li><a href="personal-page.html">The Future</a></li>
-                        <li><a href="#">Blalbla </a></li>
-                        <li><a href="#">Blalbla </a></li>
-                        <li><a href="#">Blalbla </a></li>
-
+                    <li><a href="#">Creators </a></li>
+                    <li><a href="query-page.html">Query</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="personal-page.html">The Future</a></li>
+                    <li><a href="#">Blalbla </a></li>
+                    <li><a href="#">Blalbla </a></li>
+                   
                     </ul>
                 </nav>
             </div>
             <div class="secondary-nav">
                 <nav>
-                    <li><a id="secondary-nav" href="#">Shop</a></li>
+                    <ul>
+                        <li><a id="secondary-nav" href="#">Shop</a></li>
+                    </ul>
                 </nav>
             </div>
-
+            <div class="side-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#">The Future</a></li>
+                        <li><a href="#now">Travel Now</a></li>
+                        <li><a href="#our">Our Tech</a></li>
+                        <li><a href="#editor">Page Editor</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
         </div>
+       
         <h1>The Future of Space Travel</h1>
     </section>
     <section class="content1">
@@ -51,24 +65,19 @@
             <h2>One Small Step</h2>
         </div>
         <div class="content1-pages">
-            <div>
-                <h2>Something</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque ipsum porro sit nisi qui quasi,
-                    corrupti illum fugiat quidem modi animi fugit quo suscipit incidunt eveniet veniam minus odit
-                    tenetur sequi, accusantium obcaecati dolorum. Non, tenetur, dolor doloribus nisi perspiciatis,
-                    laudantium ullam saepe provident hic nobis architecto officiis! Ipsa.</p>
+            <div id="now">
+                <h2 >Travel now</h2>
+                <p>Companies such as SpaceX and Virgin Galactic, our competitors, offer mediocre services at astronomical prices. The prices being the only astronomical aspect as the furthest they can take you is the petty distance to the moon.  </p>
             </div>
             <div>
                 <img src="assets/stardust.jpeg"
                     alt="Ground control to Major Tom, take your protein pills and put your helmet on">
-                <p>The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever - Konstantin Tsiolkovsky</p>
+                <p>The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever - Konstantin
+                    Tsiolkovsky</p>
             </div>
-            <div>
-                <h2>Something</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque ipsum porro sit nisi qui quasi,
-                    corrupti illum fugiat quidem modi animi fugit quo suscipit incidunt eveniet veniam minus odit
-                    tenetur sequi, accusantium obcaecati dolorum. Non, tenetur, dolor doloribus nisi perspiciatis,
-                    laudantium ullam saepe provident hic nobis architecto officiis! Ipsa.</p>
+            <div id="our">
+                <h2>Our Innovation</h2>
+                <p>Using our patented wrap speed tech, our shuttles can take our customers to the ends of the universe (<a href="main-page.html#tc">see T&Cs</a>). For a special cost, we also offer a reasonably priced one way ticket to a black hole of your choosing. </p>
             </div>
         </div>
     </section>
@@ -76,7 +85,9 @@
         <div class="wrapper">
             <div class="parent">
                 <img src="assets/liftoff.jpg" alt="">
-                <div class="child"><p class="some-text">We Can Go Further</p></div>
+                <div class="child">
+                    <p class="some-text">We Can Go Further</p>
+                </div>
             </div>
         </div>
 
@@ -93,7 +104,13 @@
     <section class="last-page">
         <img src="assets/abyss.jpg" alt="Nothingness" class="space">
         <img src="assets/cosmonaut.png" alt="Starman" class="starman">
-        <p><a href="page-editor.html">Page Editor</a></p>
+        <p id="editor"><a href="page-editor.html">Page Editor</a></p>
+        <div class="bottom-arrow">
+            <a href="#"><svg width="50" height="50" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1523 1440q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23zm0-384q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+                </svg></a>
+        </div>
     </section>
 
 
@@ -104,8 +121,10 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js'></script>
+
+    <script src="app.js"></script>
+ 
    
-     <script src="app.js"></script>
 </body>
 
 </html>

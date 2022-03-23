@@ -35,19 +35,54 @@
     font-size: 5rem;
     z-index: -2;
 }
-nav{
-    position: absolute;
+/* navigation styling */
+.navigation{
+    position: fixed;
+    top:0; 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
     width: 100%;
-    padding:1%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6153054971988796) 0%, rgba(30,43,41,0) 85%);
+    z-index: 1;
+    padding: 1% 8% 0 8%;
+}
+.primary-nav{
+    width: 100%;
+    margin: 0;
+}
+.secondary-nav{
+    width: 25%;   
+}
+.orion_logo{
+    margin-right: 2%;
+}
+.orion_logo a{
+    font-size: 1.2em;
+    padding: 2%;
+}
+a#secondary-nav:hover{
+    border-bottom:3px solid  white;
+}
+a:hover{
+    border-bottom:3px solid white;
+}
+.orion_logo a:hover{
+    color: #5d2315;
+    border: none;
+}
+nav li {
+    display: inline;
+    text-decoration: none;
+    padding-left: 1% ;
 }
 a{
     text-decoration: none;
+    color: white;
+    padding: 1%;
 }
-a:hover{
-    color: rgb(87, 0, 0);
+.bigO{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
 }
 .content{
     position: absolute;
