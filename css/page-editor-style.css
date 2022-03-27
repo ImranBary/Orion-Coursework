@@ -91,11 +91,20 @@ a{
     width: 100%;
     z-index: 2;
 }
-.content h3{
+.content h1{
     text-align: center;
     padding: 10% 0 0 0;
+    font-size:3em;
 }
-.text{
-    text-align: justify;
-    padding: 1% 10%;
+.content dl dt {
+    font-size: larger;
+    padding: 4%;
+}
+.content dl{
+    margin: 10% 0 0 0;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    
+    
 }

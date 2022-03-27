@@ -14,7 +14,7 @@
     width: 500px;
     height: 590px;
     left:50%;
-    transform:translate(-50%,20%);
+    transform:translate(-50%,15%);
     border-radius: 2%;
 }
 .logo{
@@ -74,7 +74,6 @@ button[type=button]:hover{
     background-color: var(--orion-orange);
 }
 
-
 #displayForm{
     display: none;
     position: relative;
@@ -82,7 +81,7 @@ button[type=button]:hover{
     width: 500px;
     height: 590px;
     left:50%;
-    transform:translate(-50%,20%);
+    transform:translate(-50%,15%);
     border-radius: 2%;
     padding:2%;
     color: white;
@@ -110,4 +109,19 @@ button[type=button]:hover{
 }
 #displayForm button[type=submit]:hover{
     background-color: var(--orion-orange);
+}
+#editor{
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 20%;
+}
+#editor a{
+    border: 2px solid white;
+    border-radius: 2%;
+}
+#editor a:hover{
+    color: black;
+    background-color: var(--orion-blue);
+    border: 2px solid var(--orion-blue);
 }
